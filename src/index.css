@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --color-brand: #FF6B6B; /* Cheerful coral */
+  --color-brand-light: #FF8E8B;
+  --color-dark: #1f2937; /* text-gray-800 */
+  --color-light: #f8fafc; /* slate-50 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-sans);
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+canvas {
+  touch-action: none;
+}
